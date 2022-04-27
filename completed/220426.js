@@ -1,0 +1,61 @@
+// codewars
+// my solutions are live, best are commented out
+// ------------------------------------------------------
+// 
+// ---find the maximum value and minimum value of a list
+// ---string cleaning
+// 
+// 
+// 
+// 
+// 
+// ---------------------------------------------------------
+// Your task is to make two functions (max and min, or maximum and minimum, etc., 
+// depending on the language) that receive a list of integers as input and return, respectively, 
+// the largest and lowest number in that list.
+// Examples (Input -> Output)
+
+// * [4,6,2,1,9,63,-134,566]         -> max = 566, min = -134
+// * [-52, 56, 30, 29, -54, 0, -110] -> min = -110, max = 56
+// * [42, 54, 65, 87, 0]             -> min = 0, max = 87
+// * [5]                             -> min = 5, max = 5
+
+// Notes
+
+//     You may consider that there will not be any empty arrays/vectors.
+
+var min = function(list){
+    return Math.min(...list)
+}
+
+var max = function(list){
+    return Math.max(...list)
+}
+
+// const min = (list) => Math.min(...list);
+// const max = (list) => Math.max(...list);
+
+// -----------------------------------------------------------------------------------
+// Your boss decided to save money by purchasing some cut-rate optical character recognition 
+// software for scanning in the text of old novels to your database. At first it seems to capture 
+// words okay, but you quickly notice that it throws in a lot of numbers at random places in the text.
+// Examples (input -> output)
+
+// '! !'                 -> '! !'
+// '123456789'           -> ''
+// 'This looks5 grea8t!' -> 'This looks great!'
+
+// // Your harried co-workers are looking to you for a solution to take this garbled text and 
+// remove all of the numbers. Your program will take in a string and clean out all numeric characters, 
+// and return a string with spacing and special characters ~#$%^&!@*():;"'.,? all intact.
+
+function removeNums(str){
+    let arr = str.split('')
+    if (arr[i] === Number){
+
+    }
+
+
+    return newStr
+}
+
