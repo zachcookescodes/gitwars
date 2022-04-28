@@ -5,9 +5,10 @@
 // ---find the maximum value and minimum value of a list
 // ---string cleaning
 // ---Create Phone Number
-// 
-// 
-// 
+// ---Will you make it?
+// ---Simple multiplication
+// ---How good are you really?
+// ---Sentence smash
 // 
 // ---------------------------------------------------------
 // Your task is to make two functions (max and min, or maximum and minimum, etc., 
@@ -95,3 +96,104 @@ function createPhoneNumber(numbers){
     return `(${areaC}) ${firsT}-${lastF}`
   }
   
+
+// -------------------------------------------------------------------------------
+
+// You were camping with your friends far away from home, but when it's time to go back, 
+// you realize that your fuel is running out and the nearest pump is 50 miles away! 
+// You know that on average, your car runs on about 25 miles per gallon. There are 2 
+// gallons left. Considering these factors, write a function that tells you if it is 
+// possible to get to the pump or not. Function should return true (1 in Prolog, NASM 
+// and COBOL) if it is possible and false (0 in Prolog, NASM and COBOL) if not. The 
+// input values are always positive.
+
+  const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+    return distanceToPump <= fuelLeft * mpg;
+  };
+
+//   const zeroFuel = (distanceToPump, mpg, fuelLeft) => mpg * fuelLeft >= distanceToPump;
+
+
+
+// ---------------------------------------------------------------------------------------------
+
+
+
+// This kata is about multiplying a given number by eight if it is an even number and by nine 
+// otherwise.
+
+
+function simpleMultiplication(number) {
+    if (number % 2 === 0){
+      return number * 8
+    }else{
+      return number * 9
+    }
+}
+
+// function simpleMultiplication(n) {
+//     return n * (n % 2 ? 9 : 8);
+// }
+
+// ---------------------------------------------------------------
+
+
+
+
+
+// There was a test in your class and you passed it. Congratulations!
+// But you're an ambitious person. You want to know if you're better than the average 
+// student in your class.
+
+// You receive an array with your peers' test scores. Now calculate the average and compare 
+// your score!
+
+// Return True if you're better, else False!
+// Note:
+
+// Your points are not included in the array of your class's points. For calculating the 
+// average point you may add your point to the given array!
+
+
+
+function betterThanAverage(classPoints, yourPoints) {
+    const avgSc = classPoints.reduce((acc, c) => acc + c, 0)
+    return avgSc/classPoints.length < yourPoints
+  }
+
+//   function betterThanAverage(classPoints, yourPoints) {
+//     return yourPoints > classPoints.reduce((a, b) => a + b, 0) / classPoints.length; 
+//   }
+  
+
+// ---------------------------------------------------
+
+
+
+// Given a non-empty array of integers, return the result of multiplying the values together in 
+// order. Example:
+
+// [1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24
+
+function grow(x){
+    return x.reduce((acc, c)=> acc * c, 1)
+  }
+
+//   const grow=x=> x.reduce((a,b) => a*b);
+// -------------------------------------------------------------------
+
+
+
+
+// Write a function that takes an array of words and smashes them together into a sentence 
+// and returns the sentence. You can ignore any need to sanitize words or add punctuation, 
+// but you should add spaces between each word. Be careful, there shouldn't be a space at the 
+// beginning or the end of the sentence!
+// Example
+
+
+
+function smash(words) {
+    return words.join(' ')
+    
+  };
