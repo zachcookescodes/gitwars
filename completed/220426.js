@@ -4,7 +4,7 @@
 // 
 // ---find the maximum value and minimum value of a list
 // ---string cleaning
-// 
+// ---Create Phone Number
 // 
 // 
 // 
@@ -22,7 +22,8 @@
 
 // Notes
 
-//     You may consider that there will not be any empty arrays/vectors.
+//     You mls
+ay consider that there will not be any empty arrays/vectors.
 
 var min = function(list){
     return Math.min(...list)
@@ -49,13 +50,48 @@ var max = function(list){
 // remove all of the numbers. Your program will take in a string and clean out all numeric characters, 
 // and return a string with spacing and special characters ~#$%^&!@*():;"'.,? all intact.
 
-function removeNums(str){
-    let arr = str.split('')
-    if (arr[i] === Number){
+// function stringClean(s){
+//     // Function will return the cleaned string
+//   var result = '';
+//   for(var i=0;i<s.length;i++) {
+//     if(isNaN(s[i])||s[i]==' ') result+=s[i]; 
+//     }
+//   return result;
+//   }
 
-    }
+//   function stringClean(s){
+//     return s.split('').filter((n) => n != parseInt(n)).join('');
+//   }
+
+//   function stringClean(s){
+//     const nums = "1234567890"
+//     let cleanStr = ""
+  
+//     for (let i = 0; i < s.length; i++) {
+//       if (nums.includes(s[i])) continue
+//       else cleanStr += s[i]
+//     }
+    
+//     return cleanStr
+//   }
+
+// ----------------------------------------------------------------------------
+// Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number.
+// Example
+
+// createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]) // => returns "(123) 456-7890"
+
+// The returned format must be correct in order to complete this challenge.
+// Don't forget the space after the closing parentheses!
 
 
-    return newStr
-}
 
+function createPhoneNumber(numbers){
+    const numbs = numbers.join('')
+    const areaC = numbs.slice(0,3)
+    const firsT = numbs.slice(3,6)
+    const lastF = numbs.slice(6,10)
+    
+    return `(${areaC}) ${firsT}-${lastF}`
+  }
+  
