@@ -20,8 +20,9 @@ function getNumberFromString(s) {
 
 
 function getNumbersFromStrings(s) = {
-    return +s.split('').filter(a=> a >= 0 && a <= 9).join('')
+    return +s.split('').filter(a=> a >= '0' && a <= '9').join('')
 }
+
 
 
 
