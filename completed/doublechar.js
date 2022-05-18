@@ -29,3 +29,11 @@ function doubleChar(str) {
 //     };
 //     return word;
 //   };
+
+// function doubleChar(str) {
+//     let result = ""
+//     str.split('').forEach(data => {
+//        result += data + data
+//     });
+//     return result
+  }
