@@ -27,7 +27,7 @@ function getSum( a,b ){
         // equal values show one of the values
         return a
     }else if( a > b ){
-        // when a is larger number
+        // when a is larger number number of items to count(larger - smaller +1 ) times 
         return ((a-b)+1) * (b + a) / 2
     }else if( a < b){
         // when b is larger number
