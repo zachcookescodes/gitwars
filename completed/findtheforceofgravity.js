@@ -40,6 +40,8 @@ Two arrays are given :
 
 // μ copy this from here to use it in your solution
 
+// force = gravity * mass1 * mass2 / distancebetween ** 2
+//                                      
 
 function solution([m1,m2,d],[um1,um2,ud]) {
   const G = 6.67e-11 ;
