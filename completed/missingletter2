@@ -1,0 +1,24 @@
+function findMissingLetter(array){
+  let newArr = array.map(x=> x.toLowerCase())
+//   converted array to lower case
+  
+  let letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m',
+                 'n','o','p','q','r','s','t','u','v','w','x','y','z']
+  
+// letters variable
+
+  let begin = letters.indexOf(newArr[0])
+// choose what letter to start at
+  
+  let seq = letters.slice(begin , begin + array.length+1)
+// take slice of letters that corresponds with array beginning
+  let miss
+// // loop through array and find the element in seq not included in newArr  
+  for (i = 0; i <= array.length; i++){
+    if(newArr.indexOf(seq[i]) === -1){
+       miss = seq[i]
+       }
+  }
+
+  return array[0] === array[0].toLowerCase() ? miss : miss.toUpperCase()
+}  
