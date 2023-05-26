@@ -1,10 +1,13 @@
-Unfortunately, there's no a .reverse() method for the JavaScript String object.
+// Unfortunately, there's no a .reverse() method for the JavaScript String object.
 
-Your task is to extend JavaScript String object, so you can reverse strings just like this:
+// Your task is to extend JavaScript String object, so you can reverse strings just like this:
 
-'Hello, World!'.reverse();
+// 'Hello, World!'.reverse();
 
-The method should return:
+// The method should return:
 
-'!dlroW ,olleH'
+// '!dlroW ,olleH'
 
+String.prototype.reverse = function(){
+    return this.split('').reverse().join('')
+  }
